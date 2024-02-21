@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <ul>
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Fugit, ipsam.</li>
+            <li id="item-3">Vel, optio!</li>
+        </ul>
+    </section>
+    <script>
+        document.getElementById('item-2').addEventListener('click',function(event){
+            console.log('item-2 clicked');
+            event.stopPropagation();
+            
+        })
+    </script>
+</body>
+</html>
